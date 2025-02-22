@@ -20,5 +20,5 @@ jobs:
           aws-region: us-east-1
           role-to-assume: arn:aws:iam::686255956468:role/adsf-demo-role
           role-session-name: OIDCSession
-      - run: aws secretsmanager get-secret-value --secret-id adsfsecret
+      - run: aws secretsmanager get-secret-value --secret-id adsf-secret
         shell: bash
